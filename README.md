@@ -19,3 +19,9 @@
 **Load Balancing:**
   The master process uses a round-robin algorithm to distribute requests among workers.
   Alternatively, the operating system can handle load balancing in some environments.
+
+**How to Start the Project:**
+- Clone the repository.
+- Install dependencies: npm i.
+- Start the application: npm start.
+
