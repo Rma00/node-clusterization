@@ -8,6 +8,7 @@
 
 // Custom Modules
 const { middleware, failureHandler } = require('../middleware/controllers')
+const { services } = require('../services')
 
 
 const handler = (app) => {
@@ -17,6 +18,10 @@ const handler = (app) => {
         middleware.trackMaintenanceActivity(req, res, next)
     })
     
+
+    app.post('/ageCalculate', (req, res) => {
+        services.ageCalculate(req, res)
+    })
 
 
 

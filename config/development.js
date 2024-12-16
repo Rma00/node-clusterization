@@ -1,7 +1,7 @@
 module.exports = {
     "appEnv": process.env.NODE_ENV,
     "application": {
-        "port": process.env.PORT,
+        "port": process.env.PORT || 8080,
         "token": process.env.TOKEN,
         "isMaintenance": false,
         "maintenanceMessage": "System Will Be Available Soon.....!",
